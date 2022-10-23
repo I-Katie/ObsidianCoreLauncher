@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Launcher.GTK": {
+      "commandName": "Project",
+      "workingDirectory": "..\\shared",
+      "hotReloadEnabled": false
+    }
+  }
+}

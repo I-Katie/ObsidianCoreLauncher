@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ByteCodePatcher/ByteCodePatcher.iml" filepath="$PROJECT_DIR$/ByteCodePatcher/ByteCodePatcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Console/Console.iml" filepath="$PROJECT_DIR$/Console/Console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForgeInstallerPatch/ForgeInstallerPatch.iml" filepath="$PROJECT_DIR$/ForgeInstallerPatch/ForgeInstallerPatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GetProperties/GetProperties.iml" filepath="$PROJECT_DIR$/GetProperties/GetProperties.iml" />
+    </modules>
+  </component>
+</project>

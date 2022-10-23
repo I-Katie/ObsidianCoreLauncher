@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewErrorController">
+            <connections>
+                <outlet property="MessageLabel" destination="wVz-49-bnr" id="5lj-GY-vPL"/>
+                <outlet property="TitleLabel" destination="l59-J2-8al" id="HqL-Wf-8XY"/>
+                <outlet property="view" destination="4" id="17"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="4">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l59-J2-8al">
+                    <rect key="frame" x="18" y="73" width="464" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Title" id="fxe-O0-xBB">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wVz-49-bnr">
+                    <rect key="frame" x="18" y="49" width="464" height="16"/>
+                    <textFieldCell key="cell" alignment="center" title="Message" id="tvb-UA-ySK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-Jo-BYL">
+                    <rect key="frame" x="222" y="13" width="57" height="32"/>
+                    <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OAx-LS-UGt">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="Button_Clicked:" target="-2" id="qUP-Wo-VC4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wVz-49-bnr" firstAttribute="top" secondItem="l59-J2-8al" secondAttribute="bottom" constant="8" symbolic="YES" id="3Ct-h4-6i4"/>
+                <constraint firstItem="l59-J2-8al" firstAttribute="top" secondItem="4" secondAttribute="top" constant="20" symbolic="YES" id="5c0-15-Hid"/>
+                <constraint firstItem="l59-J2-8al" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="UXy-DP-6Vx"/>
+                <constraint firstAttribute="trailing" secondItem="l59-J2-8al" secondAttribute="trailing" constant="20" symbolic="YES" id="bsS-W9-Mgm"/>
+                <constraint firstAttribute="bottom" secondItem="dWJ-Jo-BYL" secondAttribute="bottom" constant="20" symbolic="YES" id="clL-2W-TWk"/>
+                <constraint firstItem="dWJ-Jo-BYL" firstAttribute="top" secondItem="wVz-49-bnr" secondAttribute="bottom" constant="8" symbolic="YES" id="ljd-fL-ySV"/>
+                <constraint firstAttribute="trailing" secondItem="wVz-49-bnr" secondAttribute="trailing" constant="20" symbolic="YES" id="ocn-OZ-nxe"/>
+                <constraint firstItem="wVz-49-bnr" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="ojl-Zd-Q8u"/>
+                <constraint firstItem="dWJ-Jo-BYL" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="qny-5a-15f"/>
+            </constraints>
+            <point key="canvasLocation" x="105" y="93.5"/>
+        </customView>
+    </objects>
+</document>

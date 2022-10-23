@@ -1,0 +1,14 @@
+﻿<Page x:Class="Launcher.WPF.PageDownloadProgress"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Launcher.WPF"
+      mc:Ignorable="d" 
+      Title="PageAssets">
+    <StackPanel>
+        <Label x:Name="titleLabel" Content="title" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="nameLabel" Content="name" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Center" Height="15" Width="330" Margin="0, 10, 0, 60"/>
+    </StackPanel>
+</Page>

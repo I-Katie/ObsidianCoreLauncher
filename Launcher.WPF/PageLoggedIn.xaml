@@ -1,0 +1,21 @@
+﻿<Page x:Class="Launcher.WPF.PageLoggedIn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Launcher.WPF"
+      mc:Ignorable="d"
+      Title="PageLoggedIn">
+    <Grid Width="600" Height="350">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label x:Name="titleLabel" Content="Title" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+            <Button x:Name="launchButton" Content="Play" Width="95" Height="30" FontWeight="Bold" Margin="0,50,0,40" Click="ButtonLaunch_Click"/>
+            <Button Content="Settings" Width="75" Margin="0,0,0,20" Click="ButtonSettings_Click"/>
+            <Button Content="Logout" Width="75" Margin="0,0,0,20" Click="ButtonLogout_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10">
+            <Label x:Name="gamertagLabel" Content="Xbox gamertag: " Padding="0"/>
+            <Label x:Name="profileNameLabel" Content="Minecraft name: " Padding="0"/>
+        </StackPanel>
+    </Grid>
+</Page>

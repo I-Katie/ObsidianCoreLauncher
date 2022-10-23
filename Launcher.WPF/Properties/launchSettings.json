@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Launcher.WPF": {
+      "commandName": "Project",
+      "workingDirectory": "..\\shared",
+      "hotReloadEnabled": false
+    }
+  }
+}

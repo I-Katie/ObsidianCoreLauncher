@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Output">
+    <output-path>$PROJECT_DIR$/../shared</output-path>
+    <root id="root">
+      <element id="archive" name="Launcher.Java.jar">
+        <element id="module-output" name="ByteCodePatcher" />
+        <element id="module-output" name="ForgeInstallerPatch" />
+        <element id="module-output" name="GetProperties" />
+        <element id="module-output" name="Console" />
+      </element>
+      <element id="library" level="project" name="apache.bcel" />
+    </root>
+  </artifact>
+</component>

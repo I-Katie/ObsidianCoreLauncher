@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewWaitController">
+            <connections>
+                <outlet property="ProgressIndicator" destination="0pz-5D-utR" id="ZDv-ZE-YiA"/>
+                <outlet property="TitleLabel" destination="5Ep-Tf-ZdK" id="ZVe-ji-cgh"/>
+                <outlet property="view" destination="4" id="17"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="4">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Ep-Tf-ZdK">
+                    <rect key="frame" x="18" y="68" width="464" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Title" id="ceV-k8-PeK">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="0pz-5D-utR">
+                    <rect key="frame" x="234" y="20" width="32" height="32"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5Ep-Tf-ZdK" firstAttribute="top" secondItem="4" secondAttribute="top" constant="20" symbolic="YES" id="7qP-6y-I1o"/>
+                <constraint firstAttribute="bottom" secondItem="0pz-5D-utR" secondAttribute="bottom" constant="20" symbolic="YES" id="8PP-RK-fv0"/>
+                <constraint firstItem="0pz-5D-utR" firstAttribute="top" secondItem="5Ep-Tf-ZdK" secondAttribute="bottom" constant="16" id="ChB-TJ-emt"/>
+                <constraint firstAttribute="trailing" secondItem="5Ep-Tf-ZdK" secondAttribute="trailing" constant="20" symbolic="YES" id="UYh-il-Hdi"/>
+                <constraint firstItem="0pz-5D-utR" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="dNd-WM-9Cn"/>
+                <constraint firstItem="5Ep-Tf-ZdK" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="uhq-Xx-9PC"/>
+            </constraints>
+            <point key="canvasLocation" x="105" y="154"/>
+        </customView>
+    </objects>
+</document>

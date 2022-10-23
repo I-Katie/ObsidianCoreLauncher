@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewLoggedInController">
+            <connections>
+                <outlet property="LaunchButton" destination="fUo-SN-ySG" id="uH4-mW-bLA"/>
+                <outlet property="MinecraftLabel" destination="lq7-GZ-0hm" id="R5j-ET-SGZ"/>
+                <outlet property="TitleLabel" destination="uai-sX-cub" id="7DI-0A-xxV"/>
+                <outlet property="XboxLabel" destination="6VT-SO-fGd" id="O0x-5B-Z3n"/>
+                <outlet property="view" destination="4" id="17"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="4">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="315"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uai-sX-cub">
+                    <rect key="frame" x="18" y="273" width="564" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="560" id="aAI-2H-iF5"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Title" id="fge-kV-GTH">
+                        <font key="font" metaFont="system" size="19"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lq7-GZ-0hm">
+                    <rect key="frame" x="18" y="20" width="62" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Minecraft" id="bPI-uL-xOd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fUo-SN-ySG">
+                    <rect key="frame" x="266" y="185" width="68" height="32"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mmN-dl-oaC">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="systemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="Launch_Clicked:" target="-2" id="YiV-1Q-qSX"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XHM-bM-QeP">
+                    <rect key="frame" x="255" y="114" width="91" height="32"/>
+                    <buttonCell key="cell" type="push" title="Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RcO-Yg-yzK">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="Settings_Clicked:" target="-2" id="IXn-cn-TJi"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LET-ly-uhh">
+                    <rect key="frame" x="259" y="73" width="83" height="32"/>
+                    <buttonCell key="cell" type="push" title="Logout" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hZ0-9O-lvX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="Logout_Clicked:" target="-2" id="OpC-B0-0WS"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-SO-fGd">
+                    <rect key="frame" x="18" y="44" width="35" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Xbox" id="KbC-Ab-fXT">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6VT-SO-fGd" firstAttribute="top" secondItem="LET-ly-uhh" secondAttribute="bottom" constant="20" id="1nt-Z8-4Qs"/>
+                <constraint firstItem="XHM-bM-QeP" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="63f-6e-BnX"/>
+                <constraint firstItem="uai-sX-cub" firstAttribute="top" secondItem="4" secondAttribute="top" constant="20" symbolic="YES" id="KsG-A6-tWQ"/>
+                <constraint firstItem="lq7-GZ-0hm" firstAttribute="top" secondItem="6VT-SO-fGd" secondAttribute="bottom" constant="8" symbolic="YES" id="W2m-ay-0WR"/>
+                <constraint firstItem="uai-sX-cub" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="Xcr-27-vfp"/>
+                <constraint firstAttribute="bottom" secondItem="lq7-GZ-0hm" secondAttribute="bottom" constant="20" symbolic="YES" id="Zv1-ny-vTc"/>
+                <constraint firstItem="6VT-SO-fGd" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="cNS-Mr-T5h"/>
+                <constraint firstItem="fUo-SN-ySG" firstAttribute="top" secondItem="uai-sX-cub" secondAttribute="bottom" constant="60" id="fND-MR-uhQ"/>
+                <constraint firstItem="lq7-GZ-0hm" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="20" symbolic="YES" id="mbr-5S-Bel"/>
+                <constraint firstItem="XHM-bM-QeP" firstAttribute="top" secondItem="fUo-SN-ySG" secondAttribute="bottom" constant="50" id="n6P-sW-K68"/>
+                <constraint firstItem="fUo-SN-ySG" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="phA-rF-1db"/>
+                <constraint firstAttribute="trailing" secondItem="uai-sX-cub" secondAttribute="trailing" constant="20" symbolic="YES" id="q9b-ZV-JO1"/>
+                <constraint firstItem="LET-ly-uhh" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="sBF-D0-Ota"/>
+                <constraint firstItem="LET-ly-uhh" firstAttribute="top" secondItem="XHM-bM-QeP" secondAttribute="bottom" constant="20" id="tp4-bc-sLi"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="188.5"/>
+        </customView>
+    </objects>
+</document>
