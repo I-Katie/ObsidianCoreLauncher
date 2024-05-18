@@ -9,7 +9,7 @@
     <!--<Window.Background>
         <ImageBrush ImageSource="bg.jpg"/>
     </Window.Background>-->
-    <Grid Height="350" Width="600" >
+    <Grid Width="600" Height="350">
         <Frame x:Name="frame" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated" IsTabStop="False" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label x:Name="labelName" Content="name" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Margin="10,10,0,0"/>
         <Label Content="This launcher is unofficial and unaffiliated with Mojang or Microsoft." Foreground="Gray" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="0" Margin="0,0,10,10"/>

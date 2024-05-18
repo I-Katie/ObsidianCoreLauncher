@@ -56,13 +56,13 @@ The basic structure of the file is as follows:
   
   <!--One (and only one) of the following tags is required: -->
   
-  <!-- Launcher the specified Vanilla version. -->
+  <!-- Launch the specified Vanilla version. -->
   <launch-version>...</launch-version>
   
-  <!-- Launcher the specified Forge version. -->
+  <!-- Launch the specified Forge version. -->
   <launch-forge>...</launch-forge>
   
-  <!-- Launcher the specified Fabric version. -->
+  <!-- Launch the specified Fabric version. -->
   <launch-fabric>...</launch-fabric>
   
   <!-- Manually specify the arguments to pass to the game. Usefull for debugging. -->

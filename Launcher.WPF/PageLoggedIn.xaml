@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Launcher.WPF"
       mc:Ignorable="d"
       Title="PageLoggedIn">
-    <Grid Width="600" Height="350">
+    <Grid Width="600" Height="300">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label x:Name="titleLabel" Content="Title" FontWeight="Bold" HorizontalContentAlignment="Center"/>
             <Button x:Name="launchButton" Content="Play" Width="95" Height="30" FontWeight="Bold" Margin="0,50,0,40" Click="ButtonLaunch_Click"/>
